@@ -1,0 +1,9 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+
+## "$2" is the `-m` or `-message` flag.
+# If the message flag has been NOT set, use commitizen 
+if [ "$2" != "message" ];then 
+    exec < /dev/tty && node_modules/.bin/cz --hook "$1" "$2" "$3" || true
+fi

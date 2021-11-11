@@ -1,0 +1,27 @@
+{
+  "name": "thrash-scripts",
+  "version": "0.0.1",
+  "description": "Some (Ba)Sh Scripts",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "husky install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amindunited/thrash-scripts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amindunited/thrash-scripts/issues"
+  },
+  "homepage": "https://github.com/amindunited/thrash-scripts#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@commitlint/cli": "^14.1.0",
+    "@commitlint/config-conventional": "^14.1.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^7.0.4"
+  }
+}
