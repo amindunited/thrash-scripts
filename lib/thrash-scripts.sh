@@ -1,7 +1,10 @@
 #!/bin/bash
 
-source ./find-up.sh
-source ./re-source.sh
+dir=$(dirname "$0")
 
-re-source ".bashrc"
+source "${dir}/find-up.sh"
+source "${dir}/re-source.sh"
+source "${dir}/ssh-swap.sh"
+
+echo "Thrash Scripts Loaded!"
 
